@@ -1,0 +1,72 @@
+/* color theme for the design */
+:root {
+  --midnight-purple: #2E1760;
+  --purple: #5820B4;
+  --white: #ffffff;
+  --black: #000;
+  --gray: #1F1A2A;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+body{
+    color: var(--white);
+    background: linear-gradient(180deg, rgba(57,15,149,1) 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 100%);
+   
+}
+
+/* styles for headings */
+h1, h2{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 0px 0px 20px #8032FF, 0px 0px 20px #8032FF;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navbar styling */
+.navbar-scrolled{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 3px 20px var(--midnight-purple);
+}
+
+.navbar{
+    transition: all 0.5s;
+}
+
+nav ul li{
+    padding:0 1rem;
+}
+
+/* banner styles */
+.banner-content{   
+    padding: 15rem 0
+} 
+
+.banner{
+    background-image:url(../images/banner-img.png) ;
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    text-align: left;
+    font-size: 3rem;
+}
+
+
+img{
+    width: 80%;
+}
+
+
+
