@@ -1,0 +1,10 @@
+/* banner styling */
+.banner{
+    background-image:url(../images/about-banner.png) ;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom:3rem;
+    position: relative;
+}
+
