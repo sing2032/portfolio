@@ -8,3 +8,107 @@
     position: relative;
 }
 
+.banner-content{
+    padding: 13rem 0;
+}
+
+/* main about styling */
+.my-image{
+    
+    border-radius: 100%;
+}
+
+table td{
+    padding:1rem 2rem;
+}
+
+/* objective styling */
+.objective-container p{
+    max-width: 500px;
+    text-align: right;
+    margin: 0;
+}
+
+
+.objective-container{
+    background-image:url(../images/objective.png) ;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom:3rem;
+    position: relative;
+    padding:4rem;
+}
+
+/* hobby styling */
+.hobby-info p{
+    max-width: 400px;
+    padding-top: 2rem;
+}
+
+.hobby-icon img{
+    width: 50%;
+}
+
+.hobby-icon-container{
+    display: flex;
+    align-items: start;
+}
+
+.hobby-icon p{
+    text-transform: uppercase;
+}
+
+.hobby>p{
+    font-weight: bold;
+}
+
+.more-about{
+    margin-bottom: 3rem;
+}
+
+
+/* questions styling */
+.questions{
+    text-align: center;
+    background-color: var(--gray);
+    padding: 2rem 0;
+}
+
+hr{
+    margin-top:0;
+}
+
+.questions p{
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding:2rem 0;
+}
+
+
+
+/* MEDIA QUERY */
+@media (min-width: 992px){
+    .my-image{
+        width: 60%;
+    }
+
+    .objective{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+    
+    .objective-container p{
+        max-width: 378px;
+        order:1;
+
+    }
+
+    .objective-container h2{
+        order: 2;
+        align-self: center;
+    }
+}

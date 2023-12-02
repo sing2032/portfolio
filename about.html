@@ -17,14 +17,14 @@
     <header>
           <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/logo2.png" alt="logo" class="logo"></a>
+              <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt="logo" class="logo"></a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">ABOUT</a>
@@ -48,7 +48,7 @@
     <main>
       <div class="banner ">
         <div class="banner-content container-lg">
-            <h1>About Me</h1>
+            <h1>About Me.</h1>
             <a href="#jasleen" class="skip-links">Who am I?</a><br>
             <a href="#objective" class="skip-links">What I want to achieve?</a><br>
             <a href="#more-about" class="skip-links">More about me!</a><br>
@@ -71,7 +71,88 @@
       </div>
       <!-- closes banner -->
 
-      <
+        <div class="about container-lg mb-5" id="jasleen">
+            <div class="about-container row">
+                <div class="col-md-6 text-center">
+                    <img src="images/jasleen-singh.jpg" alt="image of jasleen" class="my-image">
+                </div>
+                <div class="about-info col-md-6 text-center">
+                    <h2>Jasleen Singh.</h2>
+                    <!-- the table contains schema information for the person -->
+                    <table itemscope itemtype="https://schema.org/Person" class="text-start">
+                        <tr>
+                            <th>Name</th>
+                            <td itemprop="name">Jasleen Singh</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                
+                                <span itemprop="addressLocality"> Ottawa,</span> 
+                                <span itemprop="addressRegion"> ON</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td itemprop="email">sing2032@algonquinlive.com</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td itemprop="birthDate">20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="objective-container" id="objective">
+            <div class="objective container-lg">
+                <h2>Objective.</h2>
+                <p> I aspire to push the boundaries of digital experiences, ensuring that each project I undertake leaves a lasting impact on users and clients alike.</p>
+            </div>
+            
+        </div>
+
+        <div class="more-about container-lg">
+            
+            <div class="row d-flex align-items-center">
+                
+                <div class="hobby-info col-md-6">
+                    <h2>More Me.</h2>
+                    <p>I am a motivated and detail-oriented person, currently pursuing Interactive Media Design at Algonquin College in Ottawa.<br>
+                    I love to draw and design and code :D</p>
+                </div>
+                <div class="hobby col-md-6">
+                    <p>I like to</p>
+                    <div class="hobby-icon-container text-center">
+                        <div class="hobby-icon">
+                            <img src="images/gaming-icon.png" alt="gamepad icon">
+                            <p>Game</p>
+                        </div>
+    
+                        <div class="hobby-icon">
+                            <img src="images/digital-pen.png" alt="gamepad icon">
+                            <p>Draw</p>
+                        </div>
+    
+                        <div class="hobby-icon">
+                            <img src="images/sleeping.png" alt="gamepad icon">
+                            <p>Sleep</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="questions">
+            <h3>Questions?</h3>
+            <p>Get in touch with me! If you have any questions, comments, or if there's anything else you'd like to discuss, I'm here to listen. Feel free to drop me a message :D</p>
+            <a href="contact.html" class="button">
+                <span>Know More</span>
+            </a>
+        </div>
 
       
 
