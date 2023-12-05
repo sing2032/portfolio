@@ -4,7 +4,7 @@ body{
 
 /* banner styling */
 .banner{
-    background-image:url(../images/contact-banner.png) ;
+    background-image:url(../images/contact-banner.jpg) ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

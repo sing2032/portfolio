@@ -4,7 +4,7 @@ body{
 
 /* banner styling */
 .banner{
-    background-image:url(../images/about-banner.png) ;
+    background-image:url(../images/about-banner.jpg) ;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -35,7 +35,7 @@ table td{
 
 
 .objective-container{
-    background-image:url(../images/objective.png) ;
+    background-image:url(../images/objective.jpg) ;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;

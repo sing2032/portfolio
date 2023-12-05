@@ -8,6 +8,10 @@
   --gray: #1F1A2A;
 }
 
+::selection{
+    background-color: var(--purple);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -84,7 +88,7 @@ nav ul li{
 } 
 
 .banner{
-    background-image:url(../images/banner-img.png) ;
+    background-image:url(../images/banner-img.jpg) ;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -150,7 +154,7 @@ img{
     width:400%;
  }
  
-
+/* scroll button */
 .scroll-link{
     color: var(--white);
     text-decoration: none;
@@ -158,7 +162,7 @@ img{
 
 .scrolling-button{
     position: absolute;
-    left:50%;
+    left:48%;
     top:580px;
     display:flex;
     justify-content:center;
