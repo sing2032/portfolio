@@ -1,0 +1,115 @@
+body{
+    background: linear-gradient(180deg, rgba(57,15,149,1) 0%,rgba(0,0,0,1) 80%, rgba(0,0,0,1) 100%);
+}
+
+/* banner styling */
+.banner{
+    background-image:url(../images/contact-banner.png) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom:3rem;
+    position: relative;
+}
+
+.banner-content{
+    padding: 15rem 0;
+}
+/* contact info styling */
+.contact-content{
+    margin: 7rem 0;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.contact-info p{
+    max-width: 500px;
+}
+
+/* icons */
+.contact-icons{
+    width: 45px;
+    padding-right: .25rem;
+    
+}
+
+/* form styling */
+
+
+form input{
+    background-color: transparent !important;
+    border: 1px #676767 solid !important;
+    caret-color: var(--white) !important;
+    color: var(--white) !important;
+}
+
+form textarea{
+    background-color: transparent !important;
+    border: 1px #676767 solid !important;
+    caret-color: var(--white) !important;
+    color: var(--white) !important;
+    resize: none;
+    max-height: 15rem;
+    
+}
+
+.floating-input{
+    
+    color: var(--white) !important;
+    padding:1rem 1.5rem !important;
+}
+
+.floating-input::after{
+    background-color: transparent !important;
+}
+
+.floatingTextarea2{
+    color: var(--white) !important;
+    
+
+}
+
+.floatingTextarea2::after{
+    background-color: transparent !important;
+}
+
+/* form button styling */
+.form-button{
+    display:inline-block;
+    border: 2px solid var(--purple);
+    padding:.5rem 1rem;
+    color:white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent !important;
+    width: 100%;
+}
+
+.form-button span {
+    position: relative;
+    z-index: 3;
+}
+
+.form-button::after{
+    
+    content:'';
+    position: absolute;
+    height: 150%;
+    width: 0%;
+    top:0;
+    left:-700px;
+    clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+    background-color: var(--purple);
+    transition: width 1s ease-out;
+}
+
+.form-button:hover::after{
+   width:400%;
+}
+
+.form-button:focus::after{
+    width:400%;
+ }

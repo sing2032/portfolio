@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(180deg, rgba(57,15,149,1) 0%,rgba(0,0,0,1) 55%, rgba(0,0,0,1) 100%);
+}
+
 /* banner styling */
 .banner{
     background-image:url(../images/about-banner.png) ;
@@ -61,6 +65,9 @@ table td{
 
 .hobby>p{
     font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 5px;
 }
 
 .more-about{
