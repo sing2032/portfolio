@@ -51,7 +51,6 @@ form textarea{
     caret-color: var(--white) !important;
     color: var(--white) !important;
     resize: none;
-    max-height: 15rem;
     
 }
 

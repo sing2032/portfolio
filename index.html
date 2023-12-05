@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
           <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html" aria-label="Opens homepage">
                 <picture>
                   <source srcset="images/logo2-252_x_49.png" media="(max-width:992px)">
                   <source srcset="images/logo2-378_x_73.png" media="(min-width:992px)">
@@ -30,16 +31,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
+                    <a class="nav-link" href="index.html" aria-label="Opens homepage">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">ABOUT</a>
+                    <a class="nav-link" href="about.html" aria-label="Opens about page">ABOUT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
+                    <a class="nav-link" href="contact.html" aria-label="Opens contact page">CONTACT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://drive.google.com/file/d/1uBn6CHltRI2onWLe_0wil0dg6RmyeiX0/view?usp=sharing" target="_blank">RESUME</a>
+                    <a class="nav-link" href="https://drive.google.com/file/d/1uBn6CHltRI2onWLe_0wil0dg6RmyeiX0/view?usp=sharing" target="_blank" aria-label="Opens resume pdf">RESUME</a>
                   </li>
                   
                  
@@ -52,16 +53,16 @@
     </header>
 
     <main>
-      <div class="banner ">
-        <div class="banner-content container-lg">
+      <div class="banner">
+        <div class="banner-content container-lg" data-aos="fade-right">
           <h1>I am <span class="auto-type"></span></h1>
-          <p>My vision is to not just deliver designs but to craft immersive experiences. My <a href="#services" class="skip-links">services</a> seamlessly integrate into <a href="#projects" class="skip-links">projects</a>, transforming concepts into captivating digital realities.</p>
+          <p>My vision is to not just deliver designs but to craft immersive experiences. My <a href="#services" aria-label="Skips to services section" class="skip-links">services</a> seamlessly integrate into <a href="#projects" aria-label="Skips to projects section" class="skip-links">projects</a>, transforming concepts into captivating digital realities.</p>
           <a href="about.html" class="button">
            <span>About me</span>
           </a>
         </div>
         
-        <a href="#services" class="scroll-link">
+        <a href="#services" class="scroll-link" aria-label="Scrolls down">
           <div class="scrolling-button">
             <div class="scrolling-button-container">
               <span class="material-symbols-outlined scroll-down">
@@ -78,13 +79,13 @@
       </div>
       <!-- closes banner -->
       
-
+      
       <div class="services container-lg" id="services">
         <div class="services-grid row g-3 text-center">
           <h2 class="col-12 g-0">My Services</h2>
 
         
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="service-card d-flex flex-column justify-content-around align-items-center">
               <picture>
                 <source srcset="images/coding-250_x_250.png" media="(max-width:992px)">
@@ -98,8 +99,8 @@
               </div>
             </div> 
           </div>
-  
-          <div class="col-md-3">
+          
+          <div class="col-md-3" data-aos="fade-up">
             <div class="service-card d-flex flex-column justify-content-around align-items-center">
               <picture>
                 <source srcset="images/graphic-250_x_250.png" media="(max-width:992px)">
@@ -114,7 +115,7 @@
             </div>
           </div>
   
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="service-card d-flex flex-column justify-content-around align-items-center">
               <picture>
                 <source srcset="images/ui-design-250_x_250.png" media="(max-width:992px)">
@@ -129,7 +130,7 @@
             </div>
           </div>
   
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-up">
             <div class="service-card d-flex flex-column justify-content-around align-items-center">
               <picture>
                 <source srcset="images/photography-service-250_x_250.png" media="(max-width:992px)">
@@ -157,7 +158,7 @@
             <h2 class="col-12 g-0">Projects</h2>
   
             
-            <div class="project-card col-md-6 offset-md-6 p-3 text-center">
+            <div class="project-card col-md-6 offset-md-6 p-3 text-center" data-aos="fade-left">
               <picture>
                 <source srcset="images/wireframe-960_x_540.jpg" media="(max-width:992px)">
                 <source srcset="images/wireframe-1440_x_810.jpg" media="(min-width:992px)">
@@ -173,7 +174,7 @@
             
   
   
-            <div class="project-card col-md-6 p-3 text-center">
+            <div class="project-card col-md-6 p-3 text-center" data-aos="fade-right">
               <picture>
                 <source srcset="images/zone-infected-final-659_x_1024.jpg" media="(max-width:992px)">
                 <source srcset="images/zone-infected-final-989_x_1535.jpg" media="(min-width:992px)">
@@ -186,7 +187,7 @@
               </div>
             </div>
   
-            <div class="project-card col-md-6 offset-md-6 p-3 text-center">
+            <div class="project-card col-md-6 offset-md-6 p-3 text-center" data-aos="fade-left">
               <picture>
                 <source srcset="images/photography-1024_x_682.jpg" media="(max-width:992px)">
                 <source srcset="images/photography-1536_x_1023.jpg" media="(min-width:992px)">
@@ -234,9 +235,15 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!--JavaScript Typing Animation Library by https://github.com/mattboldt/typed.js/-->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
+    <script>
+      AOS.init();
+    </script>
 
     <script>
+      
       const navEl = document.querySelector('.navbar');
 
       window.addEventListener('scroll', () => {
