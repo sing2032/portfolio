@@ -82,6 +82,36 @@ nav ul li{
    
 }
 
+.nav-link{
+    position: relative;
+    color: var(--white);
+}
+
+.nav-link:hover{
+    color: var(--white);
+}
+
+.nav-link::after{
+    content: '';
+    height:2px;
+    width: 0;
+    position: absolute;
+    background-color: var(--light-purple);
+    bottom:0;
+    left:0;
+    transition: width .5s ease;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+  
+}
+
+.nav-link:active::after{
+    width: 100%;
+}
+
+
 /* banner styles */
 .banner-content{   
     padding: 9rem 0;
@@ -213,14 +243,16 @@ img{
 
 .service-card{
     
-    background: linear-gradient(180deg, #2E1760 0%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(180deg, #2E1760 0%, rgba(0, 0, 0,0) 100%);
     padding:1rem;
     min-height: 300px;
+    transition:  0.3s ease-in;
     
 }
 
 .service-card:hover{
-    background: var(--black);
+    filter: brightness(1.5);
+   
 }
 
 .service-card p{
@@ -252,7 +284,7 @@ img{
     font-family: 'Oswald', sans-serif;
     position: absolute;
     z-index: -1;
-    text-wrap: nowrap;
+    white-space: nowrap;
     color: var(--gray);
     width: 100%;
     animation: scroll 25s infinite linear alternate;
@@ -281,6 +313,26 @@ img{
 .text-scroll-3{
     top:950px;
     font-size: 8rem;
+}
+
+
+/* back to top */
+.top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid var(--purple);
+    padding: 0.3rem 0.5rem 0 0.5rem;
+}
+
+.top-button:hover{
+    background-color: var(--purple);
+    transition: background-color 1s;
+}
+
+.back-to-top{
+    color: aliceblue;
+
 }
 
 /* footer styles */
