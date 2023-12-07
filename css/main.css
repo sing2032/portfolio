@@ -1,15 +1,20 @@
 /* color theme for the design */
 :root {
-  --midnight-purple: #2E1760;
-  --purple: #5820B4;
-  --light-purple:#AA76FF;
-  --white: #ffffff;
-  --black: #000;
+  --miidnight-purple: #2E1760;
+  --puurple: #5820B4;
+  --liight-purple:#AA76FF;
+  --whiite: #ffffff;
   --gray: #1F1A2A;
+
+  --bs-secondary-color:#2E1760;
+  --bs-primary: #5820B4;
+  --bs-primary-text-emphasis:#AA76FF;
+  --bs-emphasis-color:#fff;
+  --bs-tertiary-color: #1F1A2A;
 }
 
 ::selection{
-    background-color: var(--purple);
+    background-color: var(--bs-primary);
 }
 
 *{
@@ -19,7 +24,7 @@
 
 
 body{
-    color: var(--white);
+    color: var(--bs-emphasis-color);
     background: linear-gradient(180deg, rgba(57,15,149,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
     font-family: 'Jost', sans-serif;
     line-height: 1.4;
@@ -55,7 +60,7 @@ h1:before, h2:before{
     
     width: 100px;
     height:10px;
-    background-color:var(--purple);
+    background-color:var(--bs-primary);
 
     
 }
@@ -63,7 +68,7 @@ h1:before, h2:before{
 /* Navbar styling */
 .navbar-scrolled{
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 3px 20px var(--midnight-purple);
+    box-shadow: 0 3px 20px var(--bs-secondary-color);
 }
 
 .navbar{
@@ -84,11 +89,11 @@ nav ul li{
 
 .nav-link{
     position: relative;
-    color: var(--white);
+    color: var(--bs-emphasis-color);
 }
 
 .nav-link:hover{
-    color: var(--white);
+    color: var(--bs-emphasis-color);
 }
 
 .nav-link::after{
@@ -96,7 +101,7 @@ nav ul li{
     height:2px;
     width: 0;
     position: absolute;
-    background-color: var(--light-purple);
+    background-color: var(--bs-primary-text-emphasis);
     bottom:0;
     left:0;
     transition: width .5s ease;
@@ -134,7 +139,7 @@ nav ul li{
 
 .skip-links{
     text-decoration: none;
-    color:var(--light-purple);
+    color:var(--bs-primary-text-emphasis);
     z-index: 3;
 }
 
@@ -150,7 +155,7 @@ img{
 
 .button{
     display: inline-block;
-    border: 1.5px solid var(--purple);
+    border: 1.5px solid var(--bs-primary);
     padding:.5rem 1rem;
     color:white;
     text-decoration: none;
@@ -172,7 +177,7 @@ img{
     top:0;
     left:-130px;
     clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
-    background-color: var(--purple);
+    background-color: var(--bs-primary);
     transition: width 0.7s ease-out;
 }
 
@@ -186,7 +191,7 @@ img{
  
 /* scroll button */
 .scroll-link{
-    color: var(--white);
+    color: var(--bs-emphasis-color);
     text-decoration: none;
 }
 
@@ -285,7 +290,7 @@ img{
     position: absolute;
     z-index: -1;
     white-space: nowrap;
-    color: var(--gray);
+    color: var(--bs-tertiary-color);
     width: 100%;
     animation: scroll 25s infinite linear alternate;
     
@@ -321,12 +326,18 @@ img{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    border: 1px solid var(--purple);
+    border: 1px solid var(--bs-primary);
     padding: 0.3rem 0.5rem 0 0.5rem;
+    display: none;
+    transition: all 1s ease;
+}
+
+.top-button.active{
+    display:block;
 }
 
 .top-button:hover{
-    background-color: var(--purple);
+    background-color: var(--bs-primary);
     transition: background-color 1s;
 }
 
@@ -353,7 +364,7 @@ footer{
 
 footer a{
     text-decoration: none;
-    color:var(--white);
+    color:var(--bs-emphasis-color);
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
@@ -398,7 +409,7 @@ footer a{
 
     .project-card:hover img{
         -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3));
-        border: 7px solid var(--purple);
+        border: 7px solid var(--bs-primary);
         
     }
 
