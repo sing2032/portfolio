@@ -78,7 +78,7 @@ table td{
 /* questions styling */
 .questions{
     text-align: center;
-    background-color: var(--gray);
+    background-color: var(--bs-tertiary-color);
     padding: 2rem 0;
 }
 
@@ -92,8 +92,6 @@ hr{
     margin: 0 auto;
     padding:2rem 0;
 }
-
-
 
 /* MEDIA QUERY */
 @media (min-width: 992px){

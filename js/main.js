@@ -1,12 +1,12 @@
 
 // nav bar scroll
-const navEl = document.querySelector('.navbar');
+const navEl = document.querySelector(".navbar");
 
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         if (window.scrollY >= 60) {
-          navEl.classList.add('navbar-scrolled');
+          navEl.classList.add("navbar-scrolled");
         } else if (window.scrollY <60){
-          navEl.classList.remove('navbar-scrolled');
+          navEl.classList.remove("navbar-scrolled");
         }
 });
 
@@ -22,7 +22,7 @@ var typed = new Typed('.auto-type', {
 const toTop = document.querySelector(".top-button");
 
           window.addEventListener("scroll", () => {
-            if (window.scrollY> 300) {
+            if (window.scrollY> 10) {
               toTop.classList.add("active");
             } else {
               toTop.classList.remove("active");
