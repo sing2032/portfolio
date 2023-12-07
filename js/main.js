@@ -22,7 +22,7 @@ var typed = new Typed('.auto-type', {
 const toTop = document.querySelector(".top-button");
 
           window.addEventListener("scroll", () => {
-            if (window.scrollY> 10) {
+            if (window.scrollY> 100) {
               toTop.classList.add("active");
             } else {
               toTop.classList.remove("active");
