@@ -283,6 +283,10 @@ img{
     width: 60%;
 }
 
+#projects a:hover{
+    color: var(--white);
+}
+
 /* scrolling text */
 
 .text-scroll{
